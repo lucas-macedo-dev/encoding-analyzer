@@ -1,25 +1,20 @@
 {
   "name": "encoding-analyzer",
-  "displayName": "encoding_analyzer",
+  "displayName": "Encoding Analyzer",
   "description": "An extension created to make life easier for devs working with legacy projects",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "lucas-macedo-devv",
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "encoding-analyzer.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "configuration": {
       "type": "object",
       "title": "Encoding Analyzer",
@@ -33,23 +28,11 @@
           "type": "boolean",
           "default": true,
           "description": "Ignorar arquivos binários"
-        },
-        "encodingAnalyzer.availableEncodings": {
-          "type": "array",
-          "default": [
-            "utf8",
-            "windows1252",
-            "latin1"
-          ]
         }
       }
     }
   },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
-  },
+  "scripts": {},
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
