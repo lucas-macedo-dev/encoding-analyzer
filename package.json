@@ -1,0 +1,65 @@
+{
+  "name": "encoding-analyzer",
+  "displayName": "encoding_analyzer",
+  "description": "An extension created to make life easier for devs working with legacy projects",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "encoding-analyzer.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Encoding Analyzer",
+      "properties": {
+        "encodingAnalyzer.expectedEncoding": {
+          "type": "string",
+          "default": "utf-8",
+          "description": "Encoding esperado para os arquivos abertos"
+        },
+        "encodingAnalyzer.ignoreBinaryFiles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Ignorar arquivos binários"
+        },
+        "encodingAnalyzer.availableEncodings": {
+          "type": "array",
+          "default": [
+            "utf8",
+            "windows1252",
+            "latin1"
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "jschardet": "^3.1.4",
+    "vsce": "^2.15.0"
+  }
+}
