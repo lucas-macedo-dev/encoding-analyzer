@@ -3,7 +3,7 @@
   "displayName": "Encoding Analyzer",
   "description": "An extension created to make life easier for devs working with legacy projects",
   "version": "1.0.1",
-  "icon" : "./src/icons/analyzer_icon.png", 
+  "icon" : "src/icons/analyzer_icon.png", 
   "repository": "https://github.com/lucas-macedo-dev/encoding-analyzer",
   "publisher": "lucas-macedo-devv",
   "engines": {
