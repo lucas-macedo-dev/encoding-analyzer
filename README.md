@@ -1,65 +1,37 @@
-# encoding-analyzer README
+# 📦 Encoding Analyzer
 
-This is the README for your extension "encoding-analyzer". After writing up a brief description, we recommend including the following sections.
+> Detecta automaticamente arquivos com encoding diferente do esperado e alerta o usuário com uma opção para reabrir o arquivo com outro encoding.
 
-## Features
+## ✨ Funcionalidades
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🔍 Detecta automaticamente o encoding do arquivo ao abri-lo
+- ⚠️ Compara com o encoding esperado e exibe alerta em caso de diferença
+- 📜 Lista de encodings disponíveis para reabrir o arquivo corretamente
+- 🧠 Ignora arquivos binários (opcional)
 
-For example if there is an image subfolder under your extension project workspace:
+## 🔧 Configurações
 
-\!\[feature X\]\(images/feature-x.png\)
+Acesse as configurações do VS Code e procure por `Encoding Analyzer`:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Configuração | Tipo     | Padrão  | Descrição |
+|--------------|----------|---------|-----------|
+| `encodingAnalyzer.expectedEncoding` | `string`  | `"utf8"` | Define o encoding esperado dos arquivos |
+| `encodingAnalyzer.ignoreBinaryFiles` | `boolean` | `true`  | Ignora arquivos binários durante a análise |
 
-## Requirements
+## 🧪 Como Usar
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Instale a extensão.
+2. Abra qualquer arquivo no VS Code.
+3. Se o encoding for diferente do esperado, você receberá um alerta com opção de reabrir o arquivo com o encoding correto.
 
-## Extension Settings
+## 🛠️ Contribuindo
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Sinta-se à vontade para abrir issues ou pull requests com sugestões de melhoria!
 
-For example:
+## 🧑‍💻 Autor
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Criado por [lucas-macedo-dev](https://github.com/lucas-macedo-dev)
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+📘 **Licença:** MIT

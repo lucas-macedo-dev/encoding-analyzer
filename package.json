@@ -3,9 +3,10 @@
   "displayName": "Encoding Analyzer",
   "description": "An extension created to make life easier for devs working with legacy projects",
   "version": "1.0.0",
+  "repository": "https://github.com/lucas-macedo-dev/encoding-analyzer",
   "publisher": "lucas-macedo-devv",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Other"
